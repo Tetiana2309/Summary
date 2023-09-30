@@ -186,15 +186,67 @@ body {
 .seidbar {
    width: 800px;
    background-color: tan;
+   display: flex;
+   flex-direction: column;
+
+
 }
 
 .my-photo {
-   margin-top: 40px
+   margin-top: 40px;
+   border-radius: 50%;
+   width: 250px;
+   height: 260px;
+   display: block;
+   /* Убедитесь, что изображение является блочным элементом */
+   margin: 40px auto 0;
+
+
 }
 
 .contacts-container {
    margin: 48px 40px 0 40px;
 }
+
+
+
+.contacts-container {
+
+   flex-direction: column;
+
+   align-items: center;
+
+}
+
+
+.contacts-item {
+   display: flex;
+
+   align-items: center;
+
+   margin-bottom: 10px;
+
+}
+
+
+.contacts-type {
+   margin-right: 10px;
+
+}
+
+
+.contacts-numbeer,
+.contacts-email,
+.contacts-link,
+.contacts-git,
+.contacts-telegram {
+   text-decoration: none;
+
+   color: #333;
+
+}
+
+
 
 .tech-skills-container {
    margin: 48px 0 0 40px;
@@ -204,13 +256,17 @@ body {
    margin: 0 40px 48px 40px;
 }
 
+.languages-container {
+   margin: 0 40px 48px 40px;
+}
+
 .sedibar-title {
    font-style: normal;
    font-weight: 700;
    font-size: 22px;
    line-height: 24px;
    color: #161D2A;
-   margin: 8px;
+
 }
 
 /* Contacts */
@@ -289,6 +345,26 @@ body {
 }
 
 .skills-list-text {
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 24px;
+   color: #161D2A;
+}
+
+/*Languages list*/
+
+.languages-list {
+   margin: 0;
+   padding: 12px;
+}
+
+.languages-list-item {
+   color: peru;
+   margin: 0px;
+}
+
+.languages-list-text {
    font-style: normal;
    font-weight: 400;
    font-size: 14px;
