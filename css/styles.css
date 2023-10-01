@@ -4,6 +4,16 @@ body {
    padding: 40px 40px 40px 40px;
 }
 
+
+:root {
+   --primary-font: 'Montserrat', sans-serif;
+   --main-color-text: #4e3406;
+
+   --secondary-color-text: #161D2A;
+
+}
+
+
 .wrapper {
    display: flex;
    flex-direction: row-reverse;
@@ -33,7 +43,7 @@ body {
    font-weight: 700;
    font-size: 20px;
    line-height: 17px;
-   color: #4e3406;
+   color: var(--secondary-color-text);
    margin-bottom: 0 0 18px 0;
 }
 
@@ -42,17 +52,17 @@ body {
    font-weight: 700;
    font-size: 45px;
    line-height: 55px;
-   color: #4e3406;
+   color: var(--main-color-text);
    margin: 0 0 28px 0;
 }
 
-.my descr {
+.about-me-text {
    font-style: normal;
    font-weight: 400;
    font-size: 14px;
    line-height: 24px;
-   color: #4e3406;
-   width: 525px
+   color: var(--secondary-color-text);
+   width: auto;
 }
 
 .about-me-container {
@@ -66,21 +76,23 @@ body {
    font-weight: 700;
    font-size: 22px;
    line-height: 27px;
-   color: #4e3406;
+   color: var(--main-color-text);
    margin: 0 0 8px 0;
 }
 
 .project-item {
    font-style: normal;
-   font-weight: 700;
-   font-size: 14px;
+   font-weight: 500;
+   font-size: 18px;
    line-height: 24px;
-   color: rgb(192, 107, 23);
+   color: var(--secondary-color-text);
+   list-style: none;
 }
 
 .project-list {
    margin: 0 0 0 14px;
    padding: 0;
+   list-style: none;
 }
 
 .projects-conteiner {
@@ -93,7 +105,8 @@ body {
    font-weight: 400;
    font-size: 14px;
    line-height: 24px;
-   color: rgb(192, 107, 23);
+   color: var(--secondary-color-text);
+   margin-top: 0;
 }
 
 .project-item-link {
@@ -103,7 +116,7 @@ body {
    font-size: 14px;
    line-height: 24px;
    text-decoration-line: underline;
-   color: rgb(192, 107, 23);
+   color: var(--main-color-text);
 }
 
 /* Work experience */
@@ -115,12 +128,23 @@ body {
 
 .work-experience-position {
    font-style: normal;
-   font-weight: 700;
-   font-size: 14px;
-   line-height: 20px;
-   color: #4e3406;
-   margin: 0;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 24px;
+   color: var(--secondary-color-text);
+
 }
+
+.work-experience-place h4 {
+   margin-bottom: 0;
+   /* Убираем отступ снизу у h4 */
+}
+
+.work-experience-place p {
+   margin-top: 0;
+   /* Убираем отступ сверху у p */
+}
+
 
 .work-experience-place {
    margin-bottom: 16px;
@@ -128,15 +152,15 @@ body {
 
 .work-experience-compani {
 
-   color: peru;
+   color: var(--main-color-text);
 }
 
 .work-period {
    font-style: normal;
    font-weight: 400;
-   font-size: 15px;
-   line-height: 15px;
-   color: #d89518;
+   font-size: 14px;
+   line-height: 24px;
+   color: var(--secondary-color-text);
    margin: 12px 0 8px 0;
 }
 
@@ -145,7 +169,7 @@ body {
    font-weight: 400;
    font-size: 14px;
    line-height: 24px;
-   color: #4e3406;
+   color: var(--secondary-color-text);
 }
 
 .work-duties-list {
@@ -161,23 +185,24 @@ body {
 
 .education-duties {
    font-style: normal;
-   font-weight: 400;
-   font-size: 14px;
+   font-weight: 500;
+   font-size: 16px;
    line-height: 24px;
-   color: #4e3406;
+   color: var(--secondary-color-text);
+   list-style: none;
 }
 
 .education-duties-list {
-   margin: 0 0 0 14px;
+   margin: 0;
    padding: 0;
 }
 
 .education-period {
    font-style: normal;
    font-weight: 400;
-   font-size: 15px;
-   line-height: 15px;
-   color: #d89518;
+   font-size: 14px;
+   line-height: 24px;
+   color: var(--secondary-color-text);
    margin: 0 0 8px 0;
 }
 
@@ -242,7 +267,7 @@ body {
 .contacts-telegram {
    text-decoration: none;
 
-   color: #333;
+   color: var(--secondary-color-text);
 
 }
 
@@ -265,7 +290,7 @@ body {
    font-weight: 700;
    font-size: 22px;
    line-height: 24px;
-   color: #161D2A;
+   color: var(--main-color-text);
 
 }
 
@@ -276,7 +301,7 @@ body {
    font-weight: 700;
    font-size: 14px;
    line-height: 24px;
-   color: #161D2A;
+   color: var(--secondary-color-text);
    margin-right: 12px;
 }
 
@@ -289,7 +314,7 @@ body {
    font-weight: 400;
    font-size: 14px;
    line-height: 24px;
-   color: black;
+   color: var(--secondary-color-text);
 
 }
 
@@ -298,7 +323,7 @@ body {
    font-weight: 400;
    font-size: 14px;
    line-height: 24px;
-   color: black;
+   color: var(--secondary-color-text);
 }
 
 
@@ -308,7 +333,7 @@ body {
    font-weight: 400;
    font-size: 14px;
    line-height: 24px;
-   color: black;
+   color: var(--secondary-color-text);
 }
 
 
@@ -320,7 +345,7 @@ body {
 }
 
 .skills-list-item {
-   color: peru;
+   color: var(--main-color-text);
    margin: 0px;
 }
 
@@ -329,7 +354,7 @@ body {
    font-weight: 400;
    font-size: 14px;
    line-height: 24px;
-   color: #161D2A;
+   color: var(--secondary-color-text);
 }
 
 /* Soft Skill list*/
@@ -340,7 +365,7 @@ body {
 }
 
 .skills-list-item {
-   color: peru;
+   color: var(--main-color-text);
    margin: 0px;
 }
 
@@ -349,7 +374,7 @@ body {
    font-weight: 400;
    font-size: 14px;
    line-height: 24px;
-   color: #161D2A;
+   color: var(--secondary-color-text);
 }
 
 /*Languages list*/
@@ -360,7 +385,7 @@ body {
 }
 
 .languages-list-item {
-   color: peru;
+   color: var(--main-color-text);
    margin: 0px;
 }
 
@@ -369,5 +394,5 @@ body {
    font-weight: 400;
    font-size: 14px;
    line-height: 24px;
-   color: #161D2A;
+   color: var(--secondary-color-text);
 }
