@@ -1,6 +1,6 @@
 body {
    font-family: 'Montserrat', sans-serif;
-   background-color: peachpuff;
+
    padding: 40px 40px 40px 40px;
 }
 
@@ -89,11 +89,7 @@ body {
    list-style: none;
 }
 
-.project-list {
-   margin: 0 0 0 14px;
-   padding: 0;
-   list-style: none;
-}
+
 
 .projects-conteiner {
 
@@ -112,11 +108,12 @@ body {
 .project-item-link {
 
    font-style: normal;
-   font-weight: 400;
-   font-size: 14px;
+   font-weight: 500;
+   font-size: 18px;
    line-height: 24px;
    text-decoration-line: underline;
    color: var(--main-color-text);
+   text-decoration: none;
 }
 
 /* Work experience */
